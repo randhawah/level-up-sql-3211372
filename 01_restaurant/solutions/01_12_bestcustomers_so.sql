@@ -6,5 +6,4 @@ SELECT COUNT(Orders.orderID) as OrderCount, Customers.FirstName, Customers.LastN
 FROM Orders
 JOIN Customers ON Orders.CustomerID = Customers.CustomerID
 GROUP BY Orders.CustomerID
-ORDER BY OrderCount DESC
-LIMIT 15;
+ORDER BY OrderCount DESC;
