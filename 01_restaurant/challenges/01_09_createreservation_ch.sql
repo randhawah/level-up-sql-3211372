@@ -18,8 +18,11 @@ WHERE Email = 'smac@kinetecoinc.com';
 Insert into Reservations(CustomerID, Date, PartySize)
 Values(102,'2022-08-12 18:00:00', 5);
 
-Select Customers.FirstName, Customers.LastName, Customers.Email,
-Reservations.Date, Reservations.PartySize
+Select  Customers.FirstName, 
+        Customers.LastName, 
+        Customers.Email,
+        Reservations.Date, 
+        Reservations.PartySize
 From Customers
 Join Reservations
 ON Customers.CustomerID = Reservations.CustomerID
